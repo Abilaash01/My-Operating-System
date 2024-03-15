@@ -12,9 +12,9 @@
 .global loader
 
 loader:
-    mov $kernel_stack, %rsp   # Use %rsp for 64-bit stack pointer
-    pushq %rax                # Use 'pushq' for 64-bit operand size
-    pushq %rbx                # Use 'pushq' for 64-bit operand size
+    mov $kernel_stack, %esp
+    pushq %eax
+    pushq %ebx
     call kernelMain
 
 _stop:
@@ -23,5 +23,5 @@ _stop:
     jmp _stop
 
 .section .bss
-.space 2*1024*1024           # 2MB
+.space 2*1024*1024
 kernel_stack:
