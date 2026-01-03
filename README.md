@@ -9,10 +9,15 @@ The build system is intentionally Make-based to provide explicit control over co
 ## Project Structure
 
 .
+
 ├── kernel/ # Freestanding kernel source code (C/C++)
+
 ├── loader/ # Bootloader and early initialization code
+
 ├── Makefile # Object compilation rules
+
 ├── makefile # Kernel image linking rules
+
 └── README.md
 
 
@@ -40,9 +45,9 @@ The operating system is built using GNU Make to explicitly control each stage of
 ### Build Steps
 
 bash
-make kernel.o
-make loader.o
-make -f makefile mykernel.bin
+```make kernel.o```
+```make loader.o```
+```make -f makefile mykernel.bin```
 
 kernel.o — Compiles the freestanding kernel object.
 
