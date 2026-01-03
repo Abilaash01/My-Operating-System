@@ -53,6 +53,6 @@ mykernel.bin — Links the bootloader and kernel into a bootable binary image.
 ---
 
 ## Installation
-make install
+```make install```
 
 The install target installs the generated kernel image into the configured boot path or test environment, allowing it to be executed under an emulator or controlled runtime setup.
