@@ -8,7 +8,7 @@ The build system is intentionally Make-based to provide explicit control over co
 
 ## Project Structure
 
-```text
+```
 .
 ├── kernel/   # Freestanding kernel source code (C/C++)
 ├── loader/   # Bootloader and early initialization code
